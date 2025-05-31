@@ -1,0 +1,15 @@
+$opensans-fonts: (
+        'Regular': 400,
+        'Bold': 700,
+        'SemiBold': 600
+);
+
+
+$open-family: 'open';
+@each $name, $weight in $opensans-fonts {
+  @font-face {
+    font-family: $open-family;
+    src: url('../assets/fonts/NotoSans-#{$name}.ttf');
+    font-weight: $weight;
+  }
+}
