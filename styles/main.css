@@ -513,6 +513,27 @@ button {
   display: flex;
   flex-direction: column;
   padding: 32px 25px 32px 25px;
+  &.main {
+      max-width: 350px;
+      width: 100%;
+      
+  }
+}
+.main__text-block-products-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
+  & button {
+    padding: 11px 90px 11px 11px;
+    max-width: 360px;
+    width: 100%;
+    font-family: 'open';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 86%;
+    color: #787878;
+  }
 }
 .main__product-list-item-price-box {
   margin-top: 10px;
@@ -578,6 +599,9 @@ button {
   display: flex;
   align-items: flex-start;
   gap: 30px;
+  &.main {
+    gap: 350px;
+  }
 }
 
 .sidebar {
@@ -804,6 +828,10 @@ button {
   .main__product-list-item {
     padding: 20px;
   }
+  .main__product-list-item.main {
+    max-width: 350px;
+    width: 100%;
+  }
 }
 @media (max-width: 1200px) {
   .footer {
@@ -857,4 +885,18 @@ button {
   .footer-item {
     font-size: 14px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.submenu,
+.menu-item + div,
+.filter-item + div {
+    display: none;
+}
+
+.submenu.open,
+.menu-item + div.open,
+.filter-item + div.open {
+    display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

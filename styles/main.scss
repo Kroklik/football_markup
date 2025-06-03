@@ -895,7 +895,11 @@ button {
   }
 
   .main__product-list-item {
-    padding: 20px;
+    &.main {
+      max-width: 350px;
+      width: 100%;
+    }
+    padding: 20px; 
   }
 }
 
