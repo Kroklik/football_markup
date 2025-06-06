@@ -203,6 +203,7 @@
         }
         & button {
             background: none;
+            white-space: nowrap;
         }
     }
     &-size-box {
@@ -274,4 +275,105 @@
     line-height: 86%;
     color: #666666;
     white-space: nowrap;
+}
+
+.form-section-text-box {
+  img {
+    width: 2px;
+    height: 29px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-block.form {
+    flex-direction: column;
+    gap: 30px;
+    min-width: auto;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-section-text-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-form label {
+    width: 100%;
+  }
+
+  .order {
+    &-info-box {
+      width: 100%;
+    }
+
+    &-change-box,
+    &-size-box,
+    &-delivery-box {
+      padding: 15px;
+    }
+
+    &-price-box,
+    &-delivery-price-box,
+    &-delivery_final-price-box {
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content-block.form {
+    padding: 0 10px;
+  }
+
+  .order-form {
+    gap: 20px;
+  }
+
+  .order-form label.code {
+    width: 100%;
+  }
+
+  .form-section-text-box img {
+    width: 100%;
+    max-width: 40px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .form-section-text-box {
+    font-size: 13px;
+  }
+
+  .order-form label input,
+  .order-form label select,
+  .order-form label textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .order-price-box,
+  .order-delivery-price-box,
+  .order-delivery_final-price-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header__path-text-box {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
