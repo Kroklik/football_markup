@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -877,4 +878,22 @@ button {
   .footer-item {
     font-size: 14px;
   }
+}
+/* Скрываем все подменю и фильтры по умолчанию */
+.submenu,
+.menu-item + div,
+.filter-item + div {
+  display: none;
+}
+
+/* Показываем при наличии класса .open */
+.open {
+  display: block !important;
+}
+
+/* Необязательно, но удобно — можно анимировать */
+.submenu,
+.menu-item + div,
+.filter-item + div {
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=main.css.map */

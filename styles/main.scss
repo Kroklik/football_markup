@@ -987,3 +987,20 @@ button {
     }
   }
 }
+
+.submenu,
+.menu-item + div,
+.filter-item + div {
+    display: none;
+}
+
+
+.open {
+    display: block !important;
+}
+
+.submenu,
+.menu-item + div,
+.filter-item + div {
+    transition: all 0.3s ease;
+}
